@@ -1,1 +1,1 @@
-# Stonecole2025.github.io
+This is the website for a small candle business.
