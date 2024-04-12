@@ -29,6 +29,8 @@ nav {
   border-radius: 0.4em;
 }
 
+
+
 ul {
   display: inline;
   margin: 1em;
@@ -125,5 +127,13 @@ span {
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
+  }
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  nav ul {
+    float: none;
+    width: 100%;
   }
 }
