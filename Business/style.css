@@ -1,0 +1,179 @@
+html {
+  background-color: #EEEEEE;
+  width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: left;
+  color: #EEEEEE;
+}
+
+h2 {
+  color: #222831;
+}
+
+h4 {
+  text-align: left;
+  color: #EEEEEE;
+  margin-top: 3em;
+  margin-right: 45%;
+}
+
+nav {
+  border: solid thin black;
+  padding: 1em;
+  background-color: #393E46;
+  border-radius: 0.4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+
+ul {
+  display: inline;
+  margin: 1em;
+  padding: 1em;
+  color: #D65A31;
+  font-size: large;
+
+}
+
+a {
+  color: #EEEEEE;
+}
+
+a:hover {
+  color: #D65A31;
+}
+
+
+.logo {
+  width: 6.5em;
+  height: 6.5em;
+  float: left;
+  margin-right: 0.5em;
+  border-radius: 25em;
+  border: solid thin black;
+}
+
+span {
+  color: #D65A31;
+}
+
+.info {
+  text-align: center;
+  color: #222831;
+  font-size: 2.5em;
+  margin: 2em;
+  padding: 2em;
+  font-style: italic;
+}
+
+.div {
+  border: solid thin red;
+  margin: 1em;
+  padding: 1em;
+}
+
+.candle {
+  width: 8em;
+  height: 10em;
+  border-radius: 1em;
+  justify-content: left;
+  transition: width 0.5s, height 0.5s;
+}
+
+.candle:hover {
+  width: 10em;
+  height: 12em;
+}
+
+
+.description {
+  text-align: right;
+  margin: 1em;
+  padding: 1em;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.description:hover {
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #EEEEEE;
+  overflow: scroll;
+}
+
+.flex-container>div {
+  background-color: #EEEEEE;
+  width: 12em;
+  height: 14em;
+  margin: 10px;
+  padding: 1.5em;
+  font-size: 30px;
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 950px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 950px) {
+  nav {
+    flex-direction: column;
+
+  }
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+
+  }
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+
+  }
+}
