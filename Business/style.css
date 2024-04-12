@@ -139,6 +139,8 @@ span {
 @media screen and (max-width: 950px) {
   nav {
     flex-direction: column;
+    float: none;
+    width: 100%;
 
   }
 }
@@ -156,6 +158,8 @@ span {
 @media screen and (max-width: 800px) {
   nav {
     flex-direction: column;
+    float: none;
+    width: 100%;
 
   }
 }
@@ -174,6 +178,7 @@ span {
 @media screen and (max-width: 600px) {
   nav {
     flex-direction: column;
-
+    float: none;
+    width: 100%
   }
 }
