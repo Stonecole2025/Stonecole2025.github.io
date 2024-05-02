@@ -38,7 +38,7 @@ nav {
 }
 
 
-ul {
+li {
   display: inline;
   margin: 1em;
   padding: 1em;
@@ -110,7 +110,7 @@ span {
 
 .flex-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   background-color: #EEEDEB;
   border-radius: 1em;
@@ -129,60 +129,11 @@ span {
   margin: 0.5em;
 }
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 650px) {
   .flex-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-  }
-
-  .flex-container>div {
-    width: 4em;
-    height: 4em;
-    font-size: 8px;
-    margin: 0.1em;
-  }
-
-  h4 {
-    margin: 2em;
-    color: #BC7FCD;
-    font-size: 1.4em;
-
-
-  }
-
-}
-
-
-@media only screen and (max-width: 600px) {
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .flex-container>div {
-    width: 4em;
-    height: 6em;
-    font-size: 8px;
-    margin: 0.1em;
-  }
-
-  h4 {
-
-    color: #BC7FCD;
-    font-size: 1.4em;
-
-  }
-
-
-}
-
-@media only screen and (max-width: 768px) {
-  .flex-container {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 
   }
@@ -191,15 +142,41 @@ span {
     width: 4em;
     height: 6em;
     font-size: 8px;
-    margin: 0.1em;
+    margin: 1em;
+    padding: 1em;
   }
 
   h4 {
 
     color: #BC7FCD;
-    font-size: 1.4em;
-
+    font-size: 0.8em;
+    margin-left: 15em;
+    margin-top: -5em;
   }
+
+  nav {
+    padding: 0.4em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  li a {
+    display: block;
+    text-decoration: none;
+  }
+
+  li a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+
 
 
 }
