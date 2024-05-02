@@ -130,7 +130,58 @@ span {
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .flex-container>div {
+    width: 4em;
+    height: 6em;
+    font-size: 8px;
+    margin: 1em;
+    padding: 1em;
+  }
+
+  h4 {
+
+    color: #BC7FCD;
+    font-size: 0.8em;
+    margin-left: 15em;
+    margin-top: -5em;
+  }
+
+  nav {
+    padding: 0.4em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  li a {
+    display: block;
+    text-decoration: none;
+  }
+
+  li a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+
+
+
+}
+
+@media only screen and (min-width: 400px) {
   .flex-container {
     display: flex;
     flex-direction: row;
