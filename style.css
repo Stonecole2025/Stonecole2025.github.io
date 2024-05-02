@@ -110,13 +110,11 @@ span {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   background-color: #EEEDEB;
   border-radius: 1em;
-  overflow: visible;
-  margin-left: 2em;
-  margin-right: 2em;
+  overflow: scroll;
 
 
 }
@@ -126,7 +124,7 @@ span {
   width: 8em;
   height: 10em;
   font-size: 30px;
-  margin: 0.5em;
+  margin: 1.5em;
 }
 
 
@@ -135,7 +133,10 @@ span {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    background-color: #EEEDEB;
+    border-radius: 1em;
+    overflow: scroll;
+    height: 100%;
   }
 
   .flex-container>div {
@@ -160,23 +161,5 @@ span {
     flex-direction: column;
     flex-wrap: wrap;
   }
-
-  li a {
-    display: block;
-    text-decoration: none;
-  }
-
-  li a.active {
-    background-color: #04aa6d;
-    color: white;
-  }
-
-  li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-
-
-
 
 }
